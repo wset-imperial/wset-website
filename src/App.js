@@ -8,12 +8,20 @@ import ContactUs from "./components/ContactUs/ContactUs";
 import Navbar from "./components/Navbar/Navbar";
 
 class App extends Component {
-  render() {
+  state = {
+    navbarOpen: false
+  }
 
+  handleNavbar = () => {
+    this.setState({ navbarOpen: !this.state.navbarOpen });
+  }
+
+  render() {
     return (
       <BrowserRouter>
         <div>
-          <Navbar />
+          <Navbar navbarState={this.state.navbarOpen}
+                  handleNavbar={this.handleNavbar} />
           <Switch>
             <Route path='/' component={Home} exact/>
             <Route path='/Events' component={Events} />
