@@ -19,7 +19,7 @@ class App extends Component {
   render() {
     return (
       <BrowserRouter>
-        <div style={{backgroundColor:"black"}}>
+        <div>
           <Navbar navbarState={this.state.navbarOpen}
                   handleNavbar={this.handleNavbar} />
           <Switch>
