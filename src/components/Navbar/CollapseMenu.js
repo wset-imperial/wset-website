@@ -1,8 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-
 import { useSpring, animated } from 'react-spring';
-import {NavLink} from "react-router-dom";
 
 const CollapseMenu = (props) => {
   const { open } = useSpring({ open: props.navbarState ? 0 : 1 });
