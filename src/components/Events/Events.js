@@ -1,5 +1,4 @@
 import React, {Component} from "react";
-import styled from "styled-components";
 import CenterDiv from "../../styles/CenterDiv";
 
 class Events extends Component{
