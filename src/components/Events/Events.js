@@ -1,13 +1,15 @@
 import React, {Component} from "react";
+import styled from "styled-components";
+import CenterDiv from "../../styles/CenterDiv";
 
 class Events extends Component{
   render() {
     return(
-      <div>
+      <CenterDiv>
         <h1>EVENTS PAGE!</h1>
         <h1>EVENTS PAGE!</h1>
         <h1>EVENTS PAGE!</h1>
-      </div>
+      </CenterDiv>
     )
   }
 }

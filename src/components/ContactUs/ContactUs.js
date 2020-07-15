@@ -1,13 +1,14 @@
 import React, {Component} from "react";
+import CenterDiv from "../../styles/CenterDiv";
 
 class ContactUs extends Component{
   render() {
     return(
-      <div>
+      <CenterDiv>
         <h1>CONTACT US PAGE!</h1>
         <h1>CONTACT US PAGE!</h1>
         <h1>CONTACT US PAGE!</h1>
-      </div>
+      </CenterDiv>
     )
   }
 }
