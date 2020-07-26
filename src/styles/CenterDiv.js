@@ -3,7 +3,7 @@ import styled from "styled-components";
 /* White box inside each page for content. */
 const CenterDiv = styled.div`
     position: relative;
-    margin-top: 5rem;
+    margin-top: 3em;
     margin-bottom: 5rem;
     padding-top: 1.5rem;
     margin-bottom: 3rem;
@@ -15,10 +15,14 @@ const CenterDiv = styled.div`
     height: auto;
     margin-left: auto;
     margin-right: auto;
-    box-shadow: 0px 4px 6px 0px #999;
+    display: flex;
+    flex-direction: column;
     
     @media(max-width: 750px){
-      width: 85%
+      width: 100%;
+      padding-botton: 0rem;
+      margin-bottom:0rem;
+      border-radius: 0%;
     }
 `
 export default CenterDiv;

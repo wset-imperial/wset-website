@@ -7,6 +7,8 @@ import Sponsors from "./components/Sponsors/Sponsors";
 import AboutUs from "./components/AboutUs/AboutUs";
 import ContactUs from "./components/ContactUs/ContactUs";
 import Navbar from "./components/Navbar/Navbar";
+import GlobalStyle from "./styles/globalStyles";
+
 
 class App extends Component {
   state = {
@@ -20,6 +22,7 @@ class App extends Component {
   render() {
     return (
       <BrowserRouter>
+        <GlobalStyle />
         <MainDiv>
           <Navbar navbarState={this.state.navbarOpen}
                   handleNavbar={this.handleNavbar} />
@@ -39,7 +42,7 @@ class App extends Component {
   }
 }
 
-export default App
+export default App;
 
 const MainDiv = styled.div`
  display:  flex;
@@ -55,6 +58,8 @@ const PageDiv =  styled.div`
     box-sizing: border-box;
     overflow-x: hidden;
     overflow-y: hidden;
-    background-color: #EFEFF0;
+    background-color: #EFEEF0;
     position:  relative;
 `
+
+// #fae7ec
