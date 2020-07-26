@@ -61,10 +61,11 @@ const Image = styled.img`
 `;
 
 const Date = styled.p`
+  color: #043c7c;
   font-size: 0.85em;
   text-align: right;
   margin-bottom: 0rem;
-  opacity: 0.75;
+  opacity: 0.85;
   padding-bottom: 1em;
   
   @media(min-width: 768px){
