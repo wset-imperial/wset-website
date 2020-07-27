@@ -3,7 +3,7 @@ import {BrowserRouter, Route, Switch} from 'react-router-dom';
 import Home from "./components/Home/Home";
 import Events from "./components/Events/Events";
 import styled from "styled-components";
-import Sponsors from "./components/Sponsors/Sponsors";
+import Sponsors from "./components/Sponsors/SponsorsPage";
 import AboutUs from "./components/AboutUs/AboutUs";
 import ContactUs from "./components/ContactUs/ContactUs";
 import Navbar from "./components/Navbar/Navbar";
@@ -60,7 +60,7 @@ const PageDiv =  styled.div`
     box-sizing: border-box;
     overflow-x: hidden;
     overflow-y: hidden;
-    background-color: #EFEEF0;
+    background-color: #e7c6ce;
     position:  relative;
     
     @media(max-width: 768px){
