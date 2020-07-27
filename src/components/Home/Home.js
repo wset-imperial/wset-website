@@ -1,7 +1,6 @@
 import React, {Component} from "react";
 import CenterDiv from "../../styles/CenterDiv"
 import styled from "styled-components";
-import Divider from '@material-ui/core/Divider';
 import HomepageItem from "./HomePageItem";
 import Content from "./HomePageContent";
 

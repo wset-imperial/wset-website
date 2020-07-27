@@ -8,6 +8,7 @@ import AboutUs from "./components/AboutUs/AboutUs";
 import ContactUs from "./components/ContactUs/ContactUs";
 import Navbar from "./components/Navbar/Navbar";
 import GlobalStyle from "./styles/globalStyles";
+import Footer from "./components/Footer/Footer";
 
 
 class App extends Component {
@@ -36,6 +37,7 @@ class App extends Component {
                <Route component={Error}/>
              </Switch>
            </PageDiv>
+          <Footer/>
         </MainDiv>
       </BrowserRouter>
     )
@@ -60,6 +62,8 @@ const PageDiv =  styled.div`
     overflow-y: hidden;
     background-color: #EFEEF0;
     position:  relative;
+    
+    @media(max-width: 768px){
+      background-color: white;
+    }   
 `
-
-// #fae7ec
