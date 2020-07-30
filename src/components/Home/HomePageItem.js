@@ -22,7 +22,7 @@ const HomepageItem = (props) => {
 export default HomepageItem;
 
 const Title = styled.h3`
-  color:#d52f5a;
+  color:#6a1026;
   font-weight: bold;
   text-align: left;
   font-size: 1.3em;
@@ -32,7 +32,7 @@ const Title = styled.h3`
 `
 
 const Info = styled.p`
-  color: #043c7c;
+  color: black;
   font-size: 1em;
   text-align: left;
   
@@ -61,8 +61,8 @@ const Image = styled.img`
 `;
 
 const Date = styled.p`
-  color: #043c7c;
-  font-size: 0.85em;
+  color: black;
+  font-size: 0.7em;
   text-align: right;
   margin-bottom: 0rem;
   opacity: 0.85;

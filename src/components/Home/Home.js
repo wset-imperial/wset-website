@@ -33,7 +33,7 @@ class Home extends Component{
 export default Home;
 
 const Title = styled.h1`
-  color:#d52f5a;
+  color:#6a1026;
   font-weight: bold;
   text-align: center;
   font-size: 1.75em;
@@ -60,7 +60,7 @@ const TextDiv = styled.div`
   margin-right: auto;
 `
 const Paragraph = styled.p`
-  color: #043c7c;
+  color: black;
   font-size: 1.1em;
   text-align: center;
   
