@@ -60,7 +60,7 @@ const PageDiv =  styled.div`
     box-sizing: border-box;
     overflow-x: hidden;
     overflow-y: hidden;
-    background-color: #e7c6ce;
+    background-color: #efeff0;
     position:  relative;
     
     @media(max-width: 768px){

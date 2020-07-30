@@ -30,15 +30,6 @@ const sponsor = (props) => {
 
 export default sponsor;
 
-const ImageDiv = styled.div`
-  width: 100%;
-  height: auto;
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
-  
-`;
-
 const Image = styled.img`
   max-width: 30vw;
   max-height: 20vh;
