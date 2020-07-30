@@ -36,9 +36,14 @@ const Title = styled.h1`
   color:#6a1026;
   font-weight: bold;
   text-align: center;
-  font-size: 1.75em;
+  font-size: 2em;
+  width: 90%;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 0em;
   @media(min-width: 768px){
-    font-size: 2em;
+    font-size: 2.5em;
   }
 `
 
