@@ -43,8 +43,10 @@ const Info = styled.p`
 const Date = styled.p`
   color: black;
   font-size: 1em;
+  font-style: italic;
   text-align: left;
   margin-bottom: 0rem;
   opacity: 0.85;
-  
+  padding-bottom: 0.5em;
+  margin: 0;
 `

@@ -18,6 +18,8 @@ const Title = styled.h3`
   font-weight: bold;
   text-align: left;
   font-size: 1.3em;
+  padding-top: 0.5em;
+  margin: 0;
   @media(min-width: 768px){
     font-size: 1.5em;
   }
@@ -27,7 +29,8 @@ const Info = styled.p`
   color: black;
   font-size: 1em;
   text-align: left;
-  
+  padding-bottom: 0.5em;
+  margin: 0;
   @media(min-width: 768px){
     font-size: 1.2em;
   }
@@ -35,8 +38,10 @@ const Info = styled.p`
 
 const Date = styled.p`
   color: black;
+  font-style: italic;
   font-size: 1em;
   text-align: left;
-  margin-bottom: 0rem;
   opacity: 0.85;
+  padding-bottom: 0.5em;
+  margin: 0;
 `

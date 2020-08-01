@@ -5,7 +5,6 @@ import Events from "./components/Events/Events";
 import styled from "styled-components";
 import Sponsors from "./components/Sponsors/SponsorsPage";
 import AboutUs from "./components/AboutUs/AboutUs";
-import ContactUs from "./components/ContactUs/ContactUs";
 import Navbar from "./components/Navbar/Navbar";
 import GlobalStyle from "./styles/globalStyles";
 import Footer from "./components/Footer/Footer";
@@ -33,7 +32,6 @@ class App extends Component {
                <Route path='/Events' component={Events} />
                <Route path='/Sponsors' component={Sponsors} />
                <Route path='/About-Us' component={AboutUs} />
-               <Route path='/Contact-Us' component={ContactUs} />
                <Route component={Error}/>
              </Switch>
            </PageDiv>
