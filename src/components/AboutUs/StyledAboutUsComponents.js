@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const Paragraph = styled.p`
   font-size: 1.1em;
-  text-align: center;
+  text-align: justify;
   position: relative;
   width: 80%;
   margin-left: auto;
@@ -11,6 +11,7 @@ const Paragraph = styled.p`
   padding-bottom: 1em;
   @media(min-width: 768px){
     font-size: 1.25em;
+    text-align: center;
   }
 `
 
@@ -18,6 +19,7 @@ const TextDiv = styled.div`
   position: relative;
   display: flex;
   flex-direction: column;
+  align-items: center;
   width: 80%;
   margin-left: auto;
   margin-right: auto;

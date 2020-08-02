@@ -4,8 +4,8 @@ import Fade from "react-reveal/Fade";
 
 const CommitteeCard = (props) => (
   <Fade right cascade>
-    <Card>
-      <Image src={props.image} wrapped ui={false}/>
+    <Card style={{margin: "1em", maxWidth:"50vw"}}>
+      <Image src={props.image} wrapped ui={false} centered={true} />
       <Card.Content textAlign='center' max-width="50px">
         <Card.Header>{props.name}</Card.Header>
         <Card.Meta>

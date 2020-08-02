@@ -92,10 +92,11 @@ const Paragraph = styled.p`
   margin: 0;
   color: black;
   font-size: 1.1em;
-  text-align: center;
+  text-align: justify;
   
   @media(min-width: 768px){
     font-size: 1.25em;
+    text-align: center;
   }
 `
 const List = styled.ul`
@@ -139,10 +140,16 @@ const Image = styled.img`
 
 const CommitteePhoto = styled.img`
   height: auto;
-  width: 50%;
+  width: 80%;
   display: block;
   margin-left: auto;
   margin-right: auto;
   margin: auto;
   padding-bottom: 0.5em;
+  
+  @media(min-width: 768px){
+    font-size: 2em;
+    width: 50%;
+  }
+  
 `;

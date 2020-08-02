@@ -70,7 +70,7 @@ const CommitteeData = [
     name: "Vaisaaly Varatharajan",
     position: "Publicity Officer",
     fb: "https://www.facebook.com/vaisaaly.varatharajan.1",
-    linkedin: "",
+    linkedin: "https://linkedin.com/in/vaisaaly-varatharajan-b29b691b1",
     image: Vaisaaly,
   },
   {

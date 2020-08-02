@@ -14,13 +14,17 @@ const Paragraph = styled.p`
   }
 `
 const Image = styled.img`
-  max-width: 25vw;
-  max-height: 15vh;
+  max-width: 40vw;
+  max-height: 20vh;
   display: block;
   margin-left: auto;
   margin-right: auto;
   padding-top: 1.5em;
   position: relative;
+  @media(min-width: 768px){
+    max-width: 25vw;
+    max-height: 15vh;
+  }
 
 `;
 
