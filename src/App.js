@@ -26,15 +26,15 @@ class App extends Component {
         <MainDiv>
           <Navbar navbarState={this.state.navbarOpen}
                   handleNavbar={this.handleNavbar} />
-           <PageDiv>
-             <Switch>
-               <Route path='/' component={Home} exact/>
-               <Route path='/Events' component={Events} />
-               <Route path='/Sponsors' component={Sponsors} />
-               <Route path='/About-Us' component={AboutUs} />
-               <Route component={Error}/>
-             </Switch>
-           </PageDiv>
+            <PageDiv>
+              <Switch>
+                <Route path='/' component={Home} exact/>
+                <Route path='/Events' component={Events} />
+                <Route path='/Sponsors' component={Sponsors} />
+                <Route path='/About-Us' component={AboutUs} />
+                <Route component={Error}/>
+              </Switch>
+            </PageDiv>
           <Footer/>
         </MainDiv>
       </BrowserRouter>
@@ -44,24 +44,25 @@ class App extends Component {
 
 export default App;
 
+/* The entire page. */
 const MainDiv = styled.div`
  display:  flex;
  flex-direction: column;
  height: 100%;
  width: 100%;
 `
-
+/* Grey full page background. */
 const PageDiv =  styled.div`
-    width: 100vw;
-    height: 100%;
-    min-height: 100vh;
-    box-sizing: border-box;
-    overflow-x: hidden;
-    overflow-y: hidden;
-    background-color: #efeff0;
-    position:  relative;
-    
-    @media(max-width: 768px){
-      background-color: white;
-    }   
+  width: 100vw;
+  height: 100%;
+  min-height: 100vh;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  background-color: #efeff0;
+  position:  relative;
+  
+  @media(max-width: 768px){
+    background-color: white;
+  }   
 `

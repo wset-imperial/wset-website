@@ -4,45 +4,52 @@ import styled from "styled-components";
 import Upcoming from "./UpcomingEventList";
 import UpcomingEvent from "./UpcomingEvent";
 import Divider from "@material-ui/core/Divider";
-import Past from "./PastEvents";
+import Past from "./PastEventList";
 import PastEvent from "./PastEvent";
+import Fade from "react-reveal/Fade";
 
-class Events extends Component{
+class Events extends Component {
 
   render() {
-    const emptyUpcoming =  Upcoming.length === 0;
+    const emptyUpcoming = Upcoming.length === 0;
 
-    return(
+    return (
       <CenterDiv>
-        <TitleDiv>
-          <Title>Upcoming Events!</Title>
-        </TitleDiv>
+        <Fade right fade>
+          <TitleDiv>
+            <Title>Upcoming Events!</Title>
+          </TitleDiv>
+        </Fade>
         <TextDiv>
           {emptyUpcoming &&
-          <Paragraph> There are no upcoming events at the moment but keep an eye out on our <a href={"https://www.facebook.com/ic.wset"}>Facebook Page</a> for
-            any new events! Alternatively, if you have any ideas of events you would like us to host, please email us at <a href={"mailto:wset@ic.ac.uk"}>wset@ic.ac.uk</a>!
-          </Paragraph>
+          <Fade right cascade>
+            <Paragraph> There are no upcoming events at the moment but keep an eye out on our <a
+              href={"https://www.facebook.com/ic.wset"}>Facebook Page</a> for
+              any new events! Alternatively, if you have any ideas of events you would like us to host, please email us
+              at <a href={"mailto:wset@ic.ac.uk"}>wset@ic.ac.uk</a>!
+            </Paragraph>
+          </Fade>
           }
           {!emptyUpcoming &&
-            Upcoming.map((data, index) =>
-              <UpcomingEvent name={data.name} info={data.info} fblink={data.fblink} date={data.date} location={data.location} key={index} />
-            )
+          Upcoming.map((data, index) =>
+            <Fade right cascade>
+              <UpcomingEvent name={data.name} info={data.info} fblink={data.fblink} date={data.date}
+                             location={data.location} key={index}/>
+            </Fade>
+          )
           }
-        </TextDiv>
-        <Divider variant={"middle"}/>
-        <TitleDiv>
-          <Title>Previous Events!</Title>
-        </TitleDiv>
-        <TextDiv>
-          <Paragraph> These are some events that we have held. If you have any ideas of events you would like us to host, please email us at <a href={"mailto:wset@ic.ac.uk"}>wset@ic.ac.uk</a>!</Paragraph>
-        </TextDiv>
-        <TextDiv>
+          <Fade right cascade>
+            <Divider variant={"middle"}/>
+            <Title>Previous Events!</Title>
+            <Paragraph> These are some events that we have held. If you have any ideas of events you would like us to
+              host, please email us at <a href={"mailto:wset@ic.ac.uk"}>wset@ic.ac.uk</a>!</Paragraph></Fade>
           {
             Past.map((data, index) =>
-              <div>
+              <Fade right cascade>
                 <Divider variant={"middle"}/>
-                <PastEvent name={data.name} info={data.info} fblink={data.fblink} date={data.date} location={data.location} key={index} />
-              </div>
+                <PastEvent name={data.name} info={data.info} fblink={data.fblink} date={data.date}
+                           location={data.location} key={index}/>
+              </Fade>
             )
           }
         </TextDiv>
@@ -62,7 +69,9 @@ const Title = styled.h1`
   position: relative;
   margin-left: auto;
   margin-right: auto;
-  padding-bottom: 0em;
+  padding-top: 1em;
+  padding-bottom: 0.1em;
+  margin-top: -0.5em;
   margin-bottom: 0;
   @media(min-width: 768px){
     font-size: 2.5em;
@@ -76,6 +85,9 @@ const TitleDiv = styled.div`
   display: flex;
   margin-left: auto;
   margin-right: auto;
+  margin-top:0;
+  margin-bottom:0;
+  padding: 0;
 `;
 
 const TextDiv = styled.div`
@@ -85,7 +97,9 @@ const TextDiv = styled.div`
   width: 80%;
   margin-left: auto;
   margin-right: auto;
-  padding-bottom: 1em;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
 `
 const Paragraph = styled.p`
   color: black;

@@ -2,50 +2,77 @@ import React, {Component} from "react";
 import CenterDiv from "../../styles/CenterDiv"
 import styled from "styled-components";
 import Divider from "@material-ui/core/Divider";
-import Banner from "../../images/banner2.png"
+import Banner from "../../images/banner2.png";
+import Fade from "react-reveal/Fade";
+
+/* Import Committee CommitteePhoto here */
 import Committee from "../../images/committee.jpg"
 
-class Home extends Component{
+class Home extends Component {
 
   render() {
-    return(
-        <CenterDiv>
+    return (
+      <CenterDiv>
+        <Fade right cascade>
           <ImageDiv>
             <Image src={Banner} alt="Image"/>
-            <Photo src={Committee} alt="Committee"/>
+            <CommitteePhoto src={Committee} alt="Committee"/>
           </ImageDiv>
-          <Divider variant="middle" />
-          <TextDiv>
+          <Divider variant="middle"/>
+        </Fade>
+        <TextDiv>
+          <Fade right cascade>
             <SubTitle>Our Aim</SubTitle>
             <Paragraph>Women in Science, Engineering and Technology (WSET) is a society at Imperial College
-              London that was founded in 2007 by three female PhD students. We have three aims that we try fulfil every year:
+              London that was founded in 2007 by three female PhD students. We have three aims that we try fulfil every
+              year:
               <List>
-                <li> We want to connect female undergraduate students within Imperial and help grow their network.</li>
-                <li> We want to connect female undergraduate students to STEM profressionals through networking events and insight events.</li>
-                <li> We want to encourage younger female students to pursue STEM degrees at University. </li>
+                <li> We want to connect female undergraduate students within Imperial and help grow their network.
+                </li>
+                <li> We want to connect female undergraduate students to STEM profressionals through networking events
+                  and
+                  insight events.
+                </li>
+                <li> We want to encourage younger female students to pursue STEM degrees at University.</li>
               </List>
             </Paragraph>
-            <Divider variant="middle" />
+            <Divider variant="middle"/>
+          </Fade>
+          <Fade right cascade>
             <SubTitle>Want to become a member?</SubTitle>
             <Paragraph>
-              Membership to WSET is free and can be purchased from the union website <a  href={"https://www.imperialcollegeunion.org/activities/a-to-z/women-set"} target="_blank">here</a>. Make sure you log in with your
+              Membership to WSET is free and can be purchased from the union website <a
+              href={"https://www.imperialcollegeunion.org/activities/a-to-z/women-set"} target="_blank"
+              rel="noopener noreferrer">here</a>. Make sure you log in with your
               Imperial College credentials.
             </Paragraph>
-            <Divider variant="middle" />
+            <Divider variant="middle"/>
+          </Fade>
+          <Fade right cascade>
             <SubTitle>Have any questions?</SubTitle>
             <Paragraph>
               Feel free to email us at
-              <a  href={"mailto:mailto:wset@ic.ac.uk"} target="_blank"> wset@ic.ac.uk</a> with any questions or  concerns you may have.
-              <br /> Alternatively, feel free to message us on our <a href={"https://www.facebook.com/ic.wset"} target="_blank">facebook page</a>.
+              <a href={"mailto:mailto:wset@ic.ac.uk"} target="_blank" rel="noopener noreferrer"> wset@ic.ac.uk</a> with
+              any questions or concerns you may have.
+              <br/> Alternatively, feel free to message us on our <a href={"https://www.facebook.com/ic.wset"}
+                                                                     target="_blank" rel="noopener noreferrer">facebook
+              page</a>.
             </Paragraph>
-            <Divider variant="middle" />
+            <Divider variant="middle"/>
+          </Fade>
+          <Fade right cascade>
             <SubTitle>Interested in being on the mailing list?</SubTitle>
             <Paragraph>
-              Make sure you are signed up to the <a href={"https://mailman.ic.ac.uk/mailman/listinfo/icu-women-in-set"} target="_blank">ICU-Women-In-SET</a> mailing list.
-              <br /> Alternatively, feel free to email us and we can make sure that you are subscribed.
+              Make sure you are signed up to the <a href={"https://mailman.ic.ac.uk/mailman/listinfo/icu-women-in-set"}
+                                                    target="_blank"
+                                                    rel="noopener noreferrer">ICU-Women-In-SET</a> mailing
+              list.
+              <br/> Alternatively, feel free to email us and we can make sure that you are subscribed.
             </Paragraph>
-          </TextDiv>
-        </CenterDiv>
+          </Fade>
+        </TextDiv>
+      </CenterDiv>
+
     )
   }
 }
@@ -97,6 +124,7 @@ const ImageDiv = styled.div`
   margin-left: auto;
   margin-right: auto;
   padding-top: 2em;
+  padding-bottom: 1em;
 `;
 
 const Image = styled.img`
@@ -109,7 +137,7 @@ const Image = styled.img`
   padding-bottom: 0.5em;
 `;
 
-const Photo = styled.img`
+const CommitteePhoto = styled.img`
   height: auto;
   width: 50%;
   display: block;

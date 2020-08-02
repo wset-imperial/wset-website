@@ -11,18 +11,18 @@ const Footer = () => {
             {new Date().getFullYear()} Women in SET Imperial
             &nbsp;
           </Name>
-          <a href={"https://www.facebook.com/ic.wset/"} target="_blank">
+          <a href={"https://www.facebook.com/ic.wset/"} target="_blank" rel="noopener noreferrer">
             <Facebook color="#fae7ec" size={22} />
           </a>
           {"     "}
           &nbsp;
-          <a href={"https://www.instagram.com/ic_wset/"} target="_blank">
+          <a href={"https://www.instagram.com/ic_wset/"} target="_blank" rel="noopener noreferrer">
            <Instagram color="#fae7ec" size={22} />
           </a>
           {"    "}
           &nbsp;
          {" "}
-          <a href={"mailto:wset@ic.ac.uk"} target="_blank">
+          <a href={"mailto:wset@ic.ac.uk"} target="_blank" rel="noopener noreferrer">
             <Mail color="#fae7ec" size={22} />
           </a>
           {"    "}

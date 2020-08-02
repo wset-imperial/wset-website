@@ -1,3 +1,11 @@
+/*
+  * Array of objects with parameters name, date, location, fblink and info.
+  * Copy one event and paste it at the start of array and change the fields.
+  * If one of the fields doesn't exist, use "".
+  * Should be able to copy the array from UpcomingEventList and just paste it here!
+*/
+
+
 const Past = [
   {
     name: "Women In Research",
