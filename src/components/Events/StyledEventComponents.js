@@ -3,7 +3,7 @@ import styled from "styled-components";
 const Title = styled.h3`
   color:#6a1026;
   font-weight: bold;
-  text-align: left;
+  text-align: center;
   font-size: 1.5em;
   padding-top: 0.5em;
   margin: 0;
@@ -15,7 +15,7 @@ const Title = styled.h3`
 const Info = styled.p`
   color: black;
   font-size: 1.2em;
-  text-align: left;
+  text-align: center;
   padding-top: 0.3em;
   padding-bottom: 1em;
   margin: 0;
@@ -28,7 +28,7 @@ const Date = styled.p`
   color: black;
   font-style: italic;
   font-size: 1.1em;
-  text-align: left;
+  text-align: center;
   opacity: 0.85;
   padding-bottom: 0.5em;
   margin: 0;

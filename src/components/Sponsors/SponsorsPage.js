@@ -10,7 +10,7 @@ const sponsorsPage = () => {
     <CenterDiv>
       <Fade right cascade>
         <Title>
-          Sponsorship
+          Sponsors
         </Title>
         <Paragraph>
           Women In Set offers a lot to our members and none of this would be possible without the help of our sponsors.

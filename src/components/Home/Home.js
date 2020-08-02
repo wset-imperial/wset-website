@@ -100,9 +100,10 @@ const Paragraph = styled.p`
   }
 `
 const List = styled.ul`
-  text-align: center;
   list-style-position: inside;
+  text-align: center;
 `
+
 const ListItem = styled.li`
   margin: 0.5em;
 `
