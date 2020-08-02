@@ -27,13 +27,13 @@ class Home extends Component {
               London that was founded in 2007 by three female PhD students. We have three aims that we try fulfil every
               year:
               <List>
-                <li> We want to connect female undergraduate students within Imperial and help grow their network.
-                </li>
-                <li> We want to connect female undergraduate students to STEM profressionals through networking events
+                <ListItem> We want to connect female undergraduate students within Imperial and help grow their network.
+                </ListItem>
+                <ListItem> We want to connect female undergraduate students to STEM profressionals through networking events
                   and
                   insight events.
-                </li>
-                <li> We want to encourage younger female students to pursue STEM degrees at University.</li>
+                </ListItem>
+                <ListItem> We want to encourage younger female students to pursue STEM degrees at University.</ListItem>
               </List>
             </Paragraph>
             <Divider variant="middle"/>
@@ -101,8 +101,10 @@ const Paragraph = styled.p`
 `
 const List = styled.ul`
   text-align: center;
-  margin: auto;
   list-style-position: inside;
+`
+const ListItem = styled.li`
+  margin: 0.5em;
 `
 
 const SubTitle = styled.h2`
