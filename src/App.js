@@ -8,7 +8,6 @@ import AboutUs from "./components/AboutUs/AboutUs";
 import Navbar from "./components/Navbar/Navbar";
 import GlobalStyle from "./styles/globalStyles";
 import Footer from "./components/Footer/Footer";
-import {Helmet} from "react-helmet";
 
 class App extends Component {
   state = {
@@ -23,15 +22,6 @@ class App extends Component {
     return (
       <BrowserRouter>
         <GlobalStyle/>
-        <Helmet>
-          <meta name="keywords"
-                content="HTML, CSS, JavaScript, Women, STEM, Science, Engineering, Technology, Students, Society, Imperial, College, London, ICL, SET, Networking"/>
-          <meta property="og:title" content="Women in SET Imperial"/>
-          <meta property="og:description"
-                content="Women in Science, Engineering and Technology Society at Imperial College London"/>
-          <meta property="og:image" content="../src/images/wlogo.gif"/>
-          <meta property="og:url" content="https://www.women-in-set-imperial.com/"/>
-        </Helmet>
         <MainDiv>
           <Navbar navbarState={this.state.navbarOpen}
                   handleNavbar={this.handleNavbar}/>

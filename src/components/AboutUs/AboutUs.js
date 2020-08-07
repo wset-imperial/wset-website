@@ -6,17 +6,10 @@ import {Card} from 'semantic-ui-react';
 import {Divider} from '@material-ui/core';
 import {Title, TextDiv, Paragraph, SubTitle} from "./StyledAboutUsComponents";
 import Fade from "react-reveal/Fade";
-import MetaTags from "react-meta-tags";
 
 const AboutUs = () => {
   return (
     <CenterDiv>
-      <MetaTags>
-        <title>WSET About Us</title>
-        <meta name="description" content="About WSET Imperial" />
-        <meta property="og:title" content="WSET About Us" />
-        <meta property="og:image" content="../../images/wlogo.gif" />
-      </MetaTags>
       <Fade right cascade>
         <Title>Current Committee</Title>
       </Fade>
