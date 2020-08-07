@@ -4,10 +4,17 @@ import Sponsors from "./SponsorsData";
 import Sponsor from "./Sponsor";
 import {Title, Paragraph} from "./StyledSponsorComponents";
 import Fade from "react-reveal/Fade";
+import MetaTags from "react-meta-tags";
 
 const sponsorsPage = () => {
   return (
     <CenterDiv>
+      <MetaTags>
+        <title>WSET Sponsors</title>
+        <meta name="description" content="Sponsors of WSET Imperial" />
+        <meta property="og:title" content="WSET Sponsors" />
+        <meta property="og:image" content="../../images/wlogo.gif" />
+      </MetaTags>
       <Fade right cascade>
         <Title>
           Sponsors

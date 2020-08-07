@@ -7,12 +7,19 @@ import Fade from "react-reveal/Fade";
 
 /* Import Committee CommitteePhoto here */
 import Committee from "../../images/committee.jpg"
+import MetaTags from "react-meta-tags";
 
 class Home extends Component {
 
   render() {
     return (
       <CenterDiv>
+        <MetaTags>
+          <title>WSET Imperial</title>
+          <meta name="description" content="WSET Imperial" />
+          <meta property="og:title" content="WSET Imperial official website" />
+          <meta property="og:image" content="../../images/wlogo.gif" />
+        </MetaTags>
         <Fade right cascade>
           <ImageDiv>
             <Image src={Banner} alt="Image"/>

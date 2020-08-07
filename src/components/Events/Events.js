@@ -7,6 +7,7 @@ import Divider from "@material-ui/core/Divider";
 import Past from "./PastEventList";
 import PastEvent from "./PastEvent";
 import Fade from "react-reveal/Fade";
+import MetaTags from 'react-meta-tags';
 
 class Events extends Component {
 
@@ -15,6 +16,12 @@ class Events extends Component {
 
     return (
       <CenterDiv>
+        <MetaTags>
+          <title>WSET Events</title>
+          <meta name="description" content="Events hosted by WSET Imperial" />
+          <meta property="og:title" content="WSET Events" />
+          <meta property="og:image" content="../../images/wlogo.gif" />
+        </MetaTags>
         <Fade right fade>
           <TitleDiv>
             <Title>Upcoming Events!</Title>
