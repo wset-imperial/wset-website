@@ -2,7 +2,7 @@ import React from "react";
 import CenterDiv from "../../styles/CenterDiv";
 import CommitteeCard from "./CommitteeCard";
 import CommitteeData from "./CommitteeData";
-import {Card} from 'semantic-ui-react'
+import {Card} from 'semantic-ui-react';
 import {Divider} from '@material-ui/core';
 import {Title, TextDiv, Paragraph, SubTitle} from "./StyledAboutUsComponents";
 import Fade from "react-reveal/Fade";
