@@ -8,7 +8,7 @@ import AboutUs from "./components/AboutUs/AboutUs";
 import Navbar from "./components/Navbar/Navbar";
 import GlobalStyle from "./styles/globalStyles";
 import Footer from "./components/Footer/Footer";
-
+import MetaTags from "react-meta-tags";
 
 class App extends Component {
   state = {
@@ -23,6 +23,12 @@ class App extends Component {
     return (
       <BrowserRouter>
         <GlobalStyle />
+        <MetaTags>
+          <title>WSET Imperial</title>
+          <meta name="description" content="WSET Imperial" />
+          <meta property="og:title" content="WSET Imperial official website" />
+          <meta property="og:image" content="../../images/wlogo.gif" />
+        </MetaTags>
         <MainDiv>
           <Navbar navbarState={this.state.navbarOpen}
                   handleNavbar={this.handleNavbar} />
