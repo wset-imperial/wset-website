@@ -52,10 +52,26 @@ const Title = styled.h1`
     font-size: 3.5em;
   }
 `
+const SponsorTitle = styled.h1`
+  color:#6a1026;
+  font-weight: bold;
+  text-align: left;
+  font-size: 2em;
+  width: 90%;
+  position: relative;
+  margin-left: 12%;
+  margin-right: auto;
+  padding-top: 0.5em;
+  margin-bottom: 0.3em;
+  @media(min-width: 768px){
+    font-size: 2.5em;
+  }
+`
 
 export {
   Paragraph,
   Image,
   TextDiv,
-  Title
+  Title,
+  SponsorTitle
 }

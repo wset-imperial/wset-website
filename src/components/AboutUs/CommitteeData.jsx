@@ -49,7 +49,7 @@ const CommitteeData = [
     name: "Séléna Linden",
     position: "Events Organiser",
     fb: "",
-    linkedin: "",
+    linkedin: "linkedin.com/in/selena-linden-b931bb196",
     image: Selena,
   },
   {
