@@ -13,6 +13,12 @@ const Past = [
     location: "South Kensington Campus",
     fblink: "https://www.facebook.com/events/515672699304726/?acontext=%7B%22source%22%3A5%2C%22action_history%22%3A[%7B%22surface%22%3A%22page%22%2C%22mechanism%22%3A%22main_list%22%2C%22extra_data%22%3A%22%5C%22[]%5C%22%22%7D]%2C%22has_source%22%3Atrue%7D",
     info: "WSET is hosting a brand-new event: Women in Research, featuring femaler researchers in academia. The speakers will give you an insight into their career and share their experiences through talks and networking."
+  },{
+    name: "Women In Research",
+    date: "Tuesday 3rd December 2019",
+    location: "South Kensington Campus",
+    fblink: "https://www.facebook.com/events/515672699304726/?acontext=%7B%22source%22%3A5%2C%22action_history%22%3A[%7B%22surface%22%3A%22page%22%2C%22mechanism%22%3A%22main_list%22%2C%22extra_data%22%3A%22%5C%22[]%5C%22%22%7D]%2C%22has_source%22%3Atrue%7D",
+    info: "WSET is hosting a brand-new event: Women in Research, featuring femaler researchers in academia. The speakers will give you an insight into their career and share their experiences through talks and networking."
   },
   {
     name: "Annual Industry Networking Event",
